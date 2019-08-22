@@ -19,33 +19,50 @@
     box-shadow: $shadow-card;
 
     &--back {
-      transform: rotateY(180deg);
 
       &-1 {
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        transform: rotateY(-180deg);
       }
 
       &-2 {
         background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        transform: rotateX(180deg);
       }
 
       &-3 {
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        transform: rotateY(180deg);
       }
     }
 
     &--front {
       background-color: $color-white;
-      transform: rotate(0);
     }
   }
 
-  &:hover &__side--front {
+  &:hover &__side--front-1 {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back-1 {
+    transform: rotateY(0deg);
+  }
+
+  &:hover &__side--front-2 {
+    transform: rotateX(-180deg);
+  }
+
+  &:hover &__side--back-2 {
+    transform: rotateX(0);
+  }
+
+  &:hover &__side--front-3 {
     transform: rotateY(-180deg);
   }
 
-  &:hover &__side--back {
-    transform: rotateY(0);
+  &:hover &__side--back-3 {
+    transform: rotateY(0deg);
   }
 
   // FRONT SIDE STYLING
