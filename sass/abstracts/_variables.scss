@@ -1,3 +1,6 @@
+// BORDER
+$border-radius: .3rem;
+
 // COLORS
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
@@ -13,6 +16,8 @@ $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
+
 $color-white: #fff;
 $color-black: #000;
 
@@ -27,12 +32,15 @@ $gutter-horizontal: 6rem;
 // SHADOWS
 $shadow-light: 0 1.5rem 4rem rgba($color-black, .15);
 
-$shadow-button-hover: 0 1rem 2rem rgba($color-black, .2);
+$shadow-book-img: 0 1.5rem 4rem rgba($color-black, .2);
 $shadow-button-active: 0 .5rem 1rem rgba($color-black, .5);
+$shadow-button-active-2: 0 .5rem 2rem rgba($color-black, .2);
+$shadow-button-hover: 0 1rem 2rem rgba($color-black, .2);
+$shadow-button-text-hover: 0 1rem 2rem rgba($color-black, .15);
 $shadow-card: $shadow-light;
 $shadow-feature-box: $shadow-light;
+$shadow-input-focus: 0 1rem 2rem rgba($color-black, .1);
 $shadow-photo: $shadow-light;
 $shadow-photo-hover: 0 2.5rem 4rem rgba($color-black, .5);
 $shadow-story: 0 3rem 6rem rgba($color-black, .1);
 $shadow-text-hover: .5rem 1rem 2rem rgba($color-black, .2);
-
